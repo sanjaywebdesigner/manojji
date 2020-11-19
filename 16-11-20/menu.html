@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+	ul{
+		margin:0;
+		padding:0;
+		width:1008px;
+		height:52px;
+		}
+		li{
+			width:250px;
+			height:50px;
+			border:1px solid black;
+			float:left;
+			background-color:yellow;
+			list-style-type:none;
+			text-align:center;
+			line-height:50px;
+		}
+		li:hover{
+			background-color:red;
+		}
+		ul li ul{
+			width:252px;
+			display:none;
+		}
+		li:hover ul{
+			display:block;
+		}
+		ul li ul li{
+			position:relative;
+		}
+		ul li ul li ul{
+			position:absolute;
+			left:250px;
+			top:0;
+		}
+		ul li:hover ul li ul{
+			display:none;
+		}
+		ul li ul li:hover ul{
+			display:block;
+		}
+	</style>
+</head>
+
+<body>
+	<ul>
+	<li>Home
+		<ul>
+		<li>Part1
+			<ul>
+			<li>next1</li>
+			<li>next2</li>
+				<li>next3</li>
+				<li>next4</li>
+			</ul>
+			</li>
+			<li>Part2</li>
+			<li>Part3
+			<ul>
+			<li>nextq1</li>
+			<li>nextq2</li>
+				<li>nextq3</li>
+				<li>nextq4</li>
+			</ul>
+			</li>
+			<li>Part4</li>
+		</ul>
+		
+		</li>
+	<li>About</li>
+	<li>Contact</li>
+	<li>Services
+		<ul>
+		<li>Part1</li>
+			<li>Part2</li>
+			<li>Part3</li>
+			<li>Part4</li>
+		</ul>
+		
+		</li>
+	</ul>
+</body>
+</html>
